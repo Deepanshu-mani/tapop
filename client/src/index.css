@@ -1,0 +1,94 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.widget,
+.item,
+.icon {
+  opacity: 0; /* Initially hidden */
+  transform: translateZ(0); /* Reset any previous transform */
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  perspective-origin: center;
+  backface-visibility: hidden;
+}
+.bgimg{
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  perspective-origin: center;
+  filter: brightness(1.1) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+
+/* Add lighting effect */
+.widget,
+.icon,
+.item {
+  filter: brightness(1.1) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+.item {
+  filter: brightness(0.9) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* Pop-in effect for widget and item */
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); /* Start smaller */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+.pop-in {
+  animation: pop-in 0.4s ease-out forwards; /* Smooth popping effect */
+}
+
+/* Add perspective for the parent container */
+.relative {
+  perspective: 1200px; /* Adds depth to the rotation */
+  transform-style: preserve-3d;
+}
+
+
+
+@keyframes horizontal-rotation {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+    scale: 1;
+  }
+
+  50% {
+    transform: rotateY(90deg) rotateZ(15deg); /* Halfway rotation with tilt */
+    opacity: 0; /* Fade out current image */
+    scale: 0.8;
+  }
+
+  51% {
+    /* This is where the new image starts coming in */
+    opacity: 0;
+    transform: rotateY(90deg) rotateZ(-15deg); /* Start reversing tilt */
+  }
+
+  100% {
+    transform: rotateZ(0deg); /* Full rotation */
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.animate-horizontal-rotation {
+  animation: horizontal-rotation 0.5s ease-in-out forwards; /* Faster animation (0.8s) */
+}
