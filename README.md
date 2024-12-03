@@ -145,11 +145,12 @@ We welcome contributions! To help improve TAPOP, follow these steps:
 🤝 Contact
 
 Feel free to reach out for questions, suggestions, or collaborations:
-	•	GitHub: Deepanshu Kumar Mani
-	•	LinkedIn: Deepanshu Kumar Mani
+
+- GitHub: [Deepanshu Kumar Mani](https://github.com/Deepanshu-mani)
+
+- LinkedIn: [Deepanshu Kumar Mani](https://www.linkedin.com/in/deepanshu-mani-441084216/)
 
 📝 License
 
 This project is licensed under the MIT License. You’re free to use, modify, and distribute it as per the terms of the MIT license.
 
-Let me know if you need any further adjustments!
