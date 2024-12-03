@@ -49,8 +49,11 @@ const HomePage = () => {
           <h1 className="text-5xl font-extrabold mb-6 tracking-wide">
             Welcome to <span className="text-gray-300">MyApp</span>
           </h1>
-          <p className="text-lg mb-8 text-gray-400">
-            Empower your dreams and unlock your full potential. Your journey to success starts here.
+          <p className="text-xl mb-8 text-gray-400">
+            Empower your dreams and unlock your full potential.
+
+            <br/>
+             Your journey to success starts here.
           </p>
           <div className="flex justify-center space-x-4">
             <button
