@@ -9,7 +9,25 @@ Check out the live version of TAPOP here: [Live Demo](https://tapop-theta.vercel
 
 🌇 **ScreenShot** 
 
-<img width="1710" alt="Screenshot 2024-12-03 at 11 55 05 AM" src="https://github.com/user-attachments/assets/e4c695de-22be-4afa-aaad-2ad8c7d90ccd">
+HOMEPAGE
+<img width="1710" alt="Screenshot 2024-12-03 at 2 59 46 PM" src="https://github.com/user-attachments/assets/ae3c71d8-fba4-4c85-8bd2-c38b407cd80f">
+
+
+SIGNUP
+<img width="1710" alt="Screenshot 2024-12-03 at 3 00 02 PM" src="https://github.com/user-attachments/assets/5498c2e1-0d5f-439d-ae2e-561aab557858">
+
+
+LOGIN
+<img width="1710" alt="Screenshot 2024-12-03 at 2 59 54 PM" src="https://github.com/user-attachments/assets/d41c6371-18f9-44a0-af41-3198a3ab8a9c">
+
+
+DASHBOARD
+<img width="1710" alt="Screenshot 2024-12-03 at 3 00 49 PM" src="https://github.com/user-attachments/assets/34c6924d-3b47-49dd-a031-0595b873459f">
+
+
+ON QR SCAN
+<img width="1710" alt="Screenshot 2024-12-03 at 3 03 13 PM" src="https://github.com/user-attachments/assets/76651126-e4bb-4396-aa38-e9f1bfc813dc">
+
 
 🛠️ Features
 
@@ -19,6 +37,9 @@ TAPOP has several exciting features:
 	•	Responsive Design: Fully responsive for various devices, from desktop to mobile.
 	•	Customizable Themes: Easily change visual elements and styles to match different design needs.
 	•	Firebase Authentication: Users can sign up, log in, and authenticate using Firebase Authentication.
+	•	On QR scan it will redirect to a page with Hello {user name|| Mate!} message 
+	
+
 
 🖥️ Tech Stack
 
