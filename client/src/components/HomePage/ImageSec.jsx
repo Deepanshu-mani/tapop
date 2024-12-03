@@ -10,6 +10,10 @@ function ImageSec() {
   const [currentIconSet, setCurrentIconSet] = useState(0);
 
   useEffect(() => {
+    // Trigger the first animation after mounting
+    setTimeout(() => {
+      triggerTransition();
+    }, 100);
     const interval = setInterval(() => {
       triggerTransition();
     }, 5000);
